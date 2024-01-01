@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Your Product Page</title>
+</head>
+<style>
+  @media screen and (max-width:700px) {
+    #product-container{
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      padding: 4%;
+      margin-left: 25%;
+    }
+    .spe{
+      margin-left: 40%;
+    }
+    .wrapper1{
+      margin-left: 40%;
+    }
+  }
+    .wrapper1{
+      
+      min-height: 120px;
+      border: 0px solid white;
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+    }
+    .wrapper1::-webkit-scrollbar{
+      width: 0;
+    }
+    .wrapper1 .item1{
+      width: 110px;
+      height: 110px;
+      line-height: 110px;
+      text-align: center;
+      background-color: white;
+    }
+  
+</style>
+<body>
+
+    <nav id="navbar" class="">
+      <div class="nav-wrapper">
+          <!-- Navbar Logo -->
+          <div class="logo">
+              <!-- Logo Placeholder for Illustration -->
+              <a href="page1.html"><img width="100px" height="auto" src="https://www.codepel.com/wp-content/uploads/2023/01/CodePel-Logo-2.1.png" alt="Logo"></a>
+          </div>
+
+          <!-- Navbar Links 
+          <ul id="menu">
+              <li><a href="#home">Home</a></li>
+       <li><a href="#services">Services</a></li>
+       <li><a href="#about">About</a></li>
+       <li><a href="#contact">Contact</a></li>
+          </ul>-->
+                </div>
+  </nav>
+
+  <!-- Menu Icon -->
+  <div class="menuIcon">
+      <span class="icon icon-bars"></span>
+      <span class="icon icon-bars overlay"></span>
+  </div>
+
+  <div class="overlay-menu">
+      <ul id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+  </div><br><br><br>
+</center>
+<!-- Add more cards as needed -->
+
+<div class="wrapper1">
+  <div class="item1-btn1"><button class="bags"><a href="bags.html">Bags</a></button></div>
+  <div class="item1-btn2"><button class="Gagets"><a href="cloths.html">Clothes</a></button></div>
+  <div class="item1-btn4"><button class="Electronic"><a href="homeappliance.html">Home appliance</a></button> </div>
+  <div class="item1-btn5"><button class="Instashop"><a href="gagets.html">Gagets</a></button> </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br>
+
+  <!--<div id="cart" class="cart-container">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-list"></ul>
+  </div>--><CENTER>
+  <img src="IMAGE/Screenshot_2023-12-31_224045-removebg-preview.png"rel="StyleSphere"class="introimage">
+</CENTER>
+<br><br><br><br><br><br><br>
+  <center><h2 class="spe">SPECIAL OFFERS ARE AVALIABLE</h2></center><br><br>
+  <center>
+ <div class="container" id="product-container">
+    <div class="card" onclick="viewDetails(1)">
+      <img src="IMAGE/clo13.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+      <div class="card-body">
+        <h5 class="card-title">TrendCraft</h5>
+        <p class="card-text">₹999</p>
+        <div class="rating">
+          <span class="star" onclick="rateProduct(1)">★</span>
+          <span class="star" onclick="rateProduct(2)">★</span>
+          <span class="star" onclick="rateProduct(3)">★</span>
+          <span class="star" onclick="rateProduct(4)">★</span>
+          <span class="star" onclick="rateProduct(5)">★</span>
+        </div>
+        <div class="buttons">
+          <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+          <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/fur13.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">EliteLiving</h5>
+          <p class="card-text">₹ 11999.</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/fur1.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">UrbanNest Creations</h5>
+          <p class="card-text">₹ 3999.</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/lap5.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">VogueCarry</h5>
+          <p class="card-text">₹5499</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/gag10.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">hp</h5>
+          <p class="card-text">₹59499</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/schoolbag.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">UrbanTote</h5>
+          <p class="card-text">₹3599</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/fur2.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">Homestead Harmony</h5>
+          <p class="card-text">₹11635</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/lap1.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">TrendTrunk</h5>
+          <p class="card-text">₹5199</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/gag12jpg.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">TUF</h5>
+          <p class="card-text">₹71699</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/fur6.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">SerenitySeats</h5>
+          <p class="card-text">₹21635</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      
+
+      
+      </center>
+      </div>
+   
+  <script src="code.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

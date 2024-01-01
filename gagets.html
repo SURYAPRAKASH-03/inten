@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Your Product Page</title>
+</head>
+<style>
+   @media screen and (max-width:700px) {
+    #product-container{
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      padding: 4%;
+      margin-left: 0%;
+    }}
+</style>
+<body>
+<center>
+    
+
+  <!--<div id="cart" class="cart-container">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-list"></ul>
+  </div>-->
+  <center>
+ <div class="container" id="product-container">
+    <div class="card" onclick="viewDetails(1)">
+      <img src="IMAGE/gag1.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+      <div class="card-body">
+        <h5 class="card-title">JBL</h5>
+        <p class="card-text">₹4699</p>
+        <div class="rating">
+          <span class="star" onclick="rateProduct(1)">★</span>
+          <span class="star" onclick="rateProduct(2)">★</span>
+          <span class="star" onclick="rateProduct(3)">★</span>
+          <span class="star" onclick="rateProduct(4)">★</span>
+          <span class="star" onclick="rateProduct(5)">★</span>
+        </div>
+        <div class="buttons">
+          <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+          <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/gag2.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">I phone</h5>
+          <p class="card-text">₹114699</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/gag3.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">Sony</h5>
+          <p class="card-text">₹99699</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/gag4.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">Samsung</h5>
+          <p class="card-text">₹22999</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/gag5.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">Samsung</h5>
+          <p class="card-text">125000</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/gag6.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">Redme</h5>
+          <p class="card-text">₹43699</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/gag7.jpg" class="card-img-top" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title">MacBook</h5>
+          <p class="card-text">₹249699</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/gag8.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">Dell</h5>
+          <p class="card-text">₹95599</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/gag9.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">hp</h5>
+          <p class="card-text">₹45699</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/gag10.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">hp</h5>
+          <p class="card-text">₹89699</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/gag11.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">Asus</h5>
+          <p class="card-text">₹94699</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/gag5jpg.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">Samsung</h5>
+          <p class="card-text">₹77699</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      
+      </center>
+      </div>
+   
+  <script src="code.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

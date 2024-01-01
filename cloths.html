@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Your Product Page</title>
+</head>
+<style>
+  @media screen and (max-width:700px) {
+    #product-container{
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      padding: 4%;
+      margin-left: 0%;
+    }}
+</style>
+<body>
+<center>
+    
+
+  <!--<div id="cart" class="cart-container">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-list"></ul>
+  </div>-->
+  <center>
+ <div class="container" id="product-container">
+    <div class="card" onclick="viewDetails(1)">
+      <img src="IMAGE/clo1.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+      <div class="card-body">
+        <h5 class="card-title">TrendCraft</h5>
+        <p class="card-text">₹4000</p>
+        <div class="rating">
+          <span class="star" onclick="rateProduct(1)">★</span>
+          <span class="star" onclick="rateProduct(2)">★</span>
+          <span class="star" onclick="rateProduct(3)">★</span>
+          <span class="star" onclick="rateProduct(4)">★</span>
+          <span class="star" onclick="rateProduct(5)">★</span>
+        </div>
+        <div class="buttons">
+          <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+          <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/clo2.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">UrbanElegance</h5>
+          <p class="card-text">₹5500</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/clo3.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">VelvetVogue</h5>
+          <p class="card-text">₹3400</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/clo4.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title"> ModaChic </h5>
+          <p class="card-text">₹2400</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/clo5.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">DapperDress          </h5>
+          <p class="card-text">₹3499</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/clo6.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">StyleSphere</h5>
+          <p class="card-text">₹7400</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/clo7.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">LuxeLine</h5>
+          <p class="card-text">₹9599</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/clo8.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">PoshPalette</h5>
+          <p class="card-text">11000</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/clo9.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">ChicCouture</h5>
+          <p class="card-text">₹8400</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/clo10.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">RefinedRaiment </h5>
+          <p class="card-text">₹3300</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/clo11.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">UrbanElegance</h5>
+          <p class="card-text">₹2400</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/clo12.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">ModaChic</h5>
+          <p class="card-text">₹1100</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onclick="viewDetails(1)">
+        <img src="IMAGE/clo13.jpg" class="card-img-top" alt="Product Image"width="300px"height="300px">
+        <div class="card-body">
+          <h5 class="card-title">PoshPalette</h5>
+          <p class="card-text">₹2000</p>
+          <div class="rating">
+            <span class="star" onclick="rateProduct(1)">★</span>
+            <span class="star" onclick="rateProduct(2)">★</span>
+            <span class="star" onclick="rateProduct(3)">★</span>
+            <span class="star" onclick="rateProduct(4)">★</span>
+            <span class="star" onclick="rateProduct(5)">★</span>
+          </div>
+          <div class="buttons">
+            <span class="cart-icon" onclick="addToCart(1)">&#128722;</span>
+            <button class="btn btn-success" onclick="buyNow(1)">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+     
+      </center>
+      </div>
+   
+  <script src="code.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
